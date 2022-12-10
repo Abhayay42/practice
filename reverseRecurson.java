@@ -46,7 +46,7 @@ public class reverseRecurson {
     }
     //haha
     //yay
-    //nono
+    //non
 
     public static void main(String[] args) {
         Node<Integer> head = input();
