@@ -19,6 +19,7 @@ public class midpoint6 {
         }
         return head;
     }
+    //done
 
     public static Node<Integer> midpoint(Node<Integer> head){
         Node<Integer> slow=head,fast=head;
