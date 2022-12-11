@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class reverseRecurson {
+public class reverseRecurson4 {
 
     public static Node<Integer> input(){
         Scanner s = new Scanner(System.in);
