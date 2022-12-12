@@ -36,13 +36,13 @@ public class Merge2sortedLL7 {
             tail = t1 ;
             t1 = t1.next;
         }
-        if(t2.data<=t1.data){
+        else{
             head = t2;
             tail = t2;
             t2 = t2.next;
         }
 
-        while(t1.next!=null && t2.next!=null){
+        while(t1!=null && t2!=null){
             if(t1.data<=t2.data){
                 tail.next=t1;
                 tail=t1;
@@ -64,8 +64,18 @@ public class Merge2sortedLL7 {
 
         }
 
+        public static void print(Node<Integer> head){
+            Node<Integer> temp = head;
+            while(temp!=null){
+                System.out.print(temp.data+" ");
+                temp=temp.next;
+            }
+        }
+
     public static void main(String[] args) {
         Node<Integer> head1 = input();
         Node<Integer> head2 = input();
+        Node<Integer> head = merge(head1,head2);
+        print(head);
     }
 }
