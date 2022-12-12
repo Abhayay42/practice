@@ -44,9 +44,23 @@ public class Merge2sortedLL7 {
 
         while(t1.next!=null && t2.next!=null){
             if(t1.data<=t2.data){
-                
+                tail.next=t1;
+                tail=t1;
+                t1=t1.next;
+            }
+            else{
+                tail.next=t2;
+                tail=t2;
+                t2=t2.next;
             }
         }
+        if(t1!=null){
+            tail.next=t1;
+        }
+        else{
+            tail.next=t2;
+        }
+        return head;    
 
         }
 
